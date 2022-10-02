@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.main-container {
+  margin: 170px auto 0px;
+}
+.main-container .section-container__img-logo {
+  width: 52px;
+  display: block;
+  margin: 0 auto 40px;
+}
+.main-container .section-container__title {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 59%);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.main-container .section-container__title-span {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+.main-container .section-container__subcribe {
+  text-align: center;
+  font-size: 0.65em;
+  margin-bottom: 36px;
+}
+.main-container .section-container__form {
+  width: 282px;
+  margin: auto;
+}
+.main-container .section-container__form-container-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 32px;
+  margin-bottom: 3px;
+  border: 1px solid hsl(223deg, 87%, 63%);
+  padding-left: 24px;
+}
+.main-container .section-container__form-container-input:focus {
+  outline: none;
+}
+.main-container .section-container__form-container-input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+.main-container .section-container__form-container-error {
+  color: hsl(354deg, 100%, 66%);
+  font-style: italic;
+  text-align: center;
+  font-size: 0.65em;
+  visibility: hidden;
+}
+.main-container .section-container__form-container-button {
+  background-color: hsl(223deg, 87%, 63%);
+  width: 100%;
+  height: 40px;
+  border-radius: 32px;
+  border: none;
+  font-weight: 700;
+  box-shadow: 3px 3px 5px hsl(223deg, 87%, 63%);
+  color: hsl(223deg, 100%, 88%);
+  margin-bottom: 70px;
+}
+.main-container .section-container__form-container-button:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid hsl(223deg, 87%, 63%);
+  color: hsl(223deg, 87%, 63%);
+}
+.main-container .section-container__img-dashboard {
+  display: block;
+  width: 322px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+.main-container__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container__icon {
+  color: hsl(223deg, 87%, 63%);
+  font-size: 17px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(223deg, 87%, 63%);
+  border-radius: 50%;
+  margin: 0 15px;
+  padding: 6px;
+  margin-bottom: 60px;
+  transition: 300ms;
+}
+.main-container__icon:hover {
+  border: 1px solid hsl(223deg, 87%, 63%);
+  background-color: hsl(223deg, 87%, 63%);
+  border-radius: 50%;
+  color: white;
+  transition: 300ms;
+}
+
+.copy {
+  text-align: center;
+  color: hsl(0deg, 0%, 59%);
+  font-size: 0.6em;
+  margin-bottom: 75px;
+}
+
+.attribution {
+  margin-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+/*============= Desktop ============= */
+@media (min-width: 900px) {
+  .main-container .section-container__img-logo {
+    width: 96px;
+    margin-bottom: 60px;
+  }
+  .main-container .section-container__title {
+    font-size: 2.5em;
+  }
+  .main-container .section-container__subcribe {
+    font-size: 1.05em;
+    font-weight: 300;
+  }
+  .main-container .section-container__form {
+    width: 638px;
+  }
+  .main-container .section-container__form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-container .section-container__form-container-error {
+    text-align: left;
+    padding-left: 24px;
+  }
+  .main-container .section-container__form-container-input {
+    width: 420px;
+    height: 55px;
+    font-size: 0.8em;
+  }
+  .main-container .section-container__form-container-button {
+    width: 200px;
+    height: 55px;
+    margin-bottom: 90px;
+    font-size: 0.8em;
+  }
+  .main-container .section-container__img-dashboard {
+    width: 640px;
+    margin-bottom: 74px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

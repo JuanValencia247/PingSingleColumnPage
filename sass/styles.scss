@@ -1,0 +1,179 @@
+@use 'variables' as v;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    // background-color: v.$Blue;
+    font-family: v.$Font-Libre-Franklin;
+}
+.main-container{
+    margin: 170px auto 0px;
+    .section-container{
+        &__img-logo{
+            width: 52px;
+            display: block;
+            margin: 0 auto 40px;
+        }
+        &__title{
+            font-size: 1.2em;
+            font-weight: 300;
+            color: v.$Gray;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        &__title-span{
+            color: v.$Very-Dark-Blue;
+            font-weight: 700;
+        }
+        &__subcribe{
+            text-align: center;
+            font-size: 0.65em;
+            margin-bottom: 36px;
+        }
+
+        &__form{
+            width: 282px;
+            margin: auto;
+        }
+        &__form-container-input{
+            width: 100%;
+            height: 40px;
+            border-radius: 32px;
+            margin-bottom: 3px;
+            border: 1px solid v.$Blue;
+            padding-left: 24px;
+        }
+        &__form-container-input:focus{
+            outline: none;
+        }
+        &__form-container-input::placeholder{
+            color: v.$Pale-Blue;
+        }
+        &__form-container-error{
+            color: v.$Light-Red;
+            font-style: italic;
+            text-align: center;
+            font-size: 0.65em;
+            visibility: hidden;
+        }
+        &__form-container-button{
+            background-color: v.$Blue;
+            width: 100%;
+            height: 40px;
+            border-radius: 32px;
+            border: none;
+            font-weight: 700;
+            box-shadow: 3px 3px 5px v.$Blue;
+            color: v.$Pale-Blue;
+            margin-bottom: 70px;
+        }
+        &__form-container-button:hover{
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid v.$Blue;
+            color: v.$Blue;
+        }
+        &__img-dashboard{
+            display: block;
+            width: 322px;
+            margin: auto;
+            margin-bottom: 120px;
+        }
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        color: v.$Blue;
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid v.$Blue;
+        border-radius: 50%;
+        margin: 0  15px;
+        padding: 6px;
+        margin-bottom: 60px;
+        transition: 300ms;
+    }
+    &__icon:hover{
+      border: 1px solid v.$Blue;
+      background-color: v.$Blue;
+      border-radius: 50%;
+      color: white;
+      transition: 300ms;
+    }
+}
+.copy{
+    text-align: center;
+    color: v.$Gray;
+    font-size: 0.6em;
+    margin-bottom: 75px;
+}
+//=========== footer =============//
+.attribution { 
+    margin-bottom: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+/*============= Desktop ============= */
+@media (min-width: 900px){
+    .main-container{
+        .section-container{
+            &__img-logo{
+                width: 96px;
+                margin-bottom: 60px;
+            }
+            &__title{
+                font-size: 2.5em;
+            }
+            &__subcribe{
+                font-size: 1.05em;
+                font-weight: 300;
+            }
+
+            &__form{
+                width: 638px;  
+            }
+            &__form-container{
+                display: flex;
+                justify-content: space-between;
+            }
+            &__form-container-error{
+                text-align: left;
+                padding-left: 24px;
+            }
+            &__form-container-input{
+                width: 420px;
+                height: 55px;
+                font-size: 0.8em;
+            }
+            &__form-container-button{
+                width: 200px;
+                height: 55px;
+                margin-bottom: 90px;
+                font-size: 0.8em;
+            }
+            &__img-dashboard{
+                width: 640px;
+                margin-bottom: 74px;
+            }
+
+        }
+    }
+    
+}
